@@ -1,0 +1,134 @@
+.item1 {
+    grid-area: header;
+}
+
+
+.item2 {
+    grid-area: menu;
+}
+
+
+.item3 {
+    grid-area: main;
+}
+
+
+.item4 {
+    grid-area: right;
+}
+
+
+.item5 {
+    grid-area: footer;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+    grid-template-rows: auto 1fr auto;
+    gap: 1px;
+    background-color: Darkgreen;
+    padding: 10px;
+    height: 100vh;
+    box-shadow:10px 10px white;
+}
+
+.grid-container > div {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    background-color: lightpink;
+}
+
+
+.top-menu ul li a {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.top-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.item2 {
+    height: 100%;
+}
+
+
+.side-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+    height: 100%;
+}
+
+
+.side-menu ul li {
+   color: blue; 
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+}
+
+
+.item2 {
+    
+    height: 100%;
+}
+
+
+.side-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    height: 100%;
+}
+
+
+.side-menu ul li {
+   color: red;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+}
+
+.item5 {
+    background-color: grey; 
+}
+
+body {
+    background-image: url(/img/familycooking.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    opacity: 80%; 
+}
+
+.item {
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 8px 12px 8px rgba(217, 232, 13, 0.5);
+    z-index: 1; 
+}
